@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Atividades e Notas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Logo -->
+    <header>
+        <img src="logo.png" alt="Rede Comunità Logo" class="logo">
+    </header>
+
+    <h1>Gerenciador de Atividades e Notas</h1>
+
+    <!-- Formulário para adicionar atividades -->
+    <section id="adicionar-atividade">
+        <h2>Adicionar Atividade</h2>
+        <form id="atividade-form">
+            <label for="nome-atividade">Nome da Atividade:</label>
+            <input type="text" id="nome-atividade" required>
+            <label for="turma">Turma:</label>
+            <select id="turma" required>
+                <option value="operador">Operador de Microcomputador</option>
+                <option value="webdesign">Web Design</option>
+            </select>
+            <button type="submit">Adicionar</button>
+        </form>
+    </section>
+
+    <!-- Seletor de atividades anteriores -->
+    <section id="selecionar-atividade">
+        <h2>Visualizar Notas de Atividades</h2>
+        <label for="atividade-selecionada">Escolha uma atividade:</label>
+        <select id="atividade-selecionada">
+            <option value="">Todas as Atividades</option>
+            <!-- Opções serão preenchidas dinamicamente -->
+        </select>
+    </section>
+
+    <!-- Tabelas de notas -->
+    <section id="tabelas-notas">
+        <h2>Notas das Turmas</h2>
+        <h3>Operador de Microcomputador</h3>
+        <table id="tabela-operador">
+            <thead>
+                <tr>
+                    <th>Aluno</th>
+                    <!-- As colunas de atividades serão adicionadas dinamicamente -->
+                </tr>
+            </thead>
+            <tbody id="corpo-operador"></tbody>
+        </table>
+
+        <h3>Web Design</h3>
+        <table id="tabela-webdesign">
+            <thead>
+                <tr>
+                    <th>Aluno</th>
+                    <!-- As colunas de atividades serão adicionadas dinamicamente -->
+                </tr>
+            </thead>
+            <tbody id="corpo-webdesign"></tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

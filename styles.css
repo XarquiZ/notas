@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Fundo branco */
+    color: #1a1a1a;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #F28C38; /* Laranja da logo */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#adicionar-atividade, #selecionar-atividade {
+    margin-bottom: 30px;
+    background-color: rgba(161, 0, 164, 0.1); /* Roxo transparente */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form, #selecionar-atividade {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input, select, button {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #A100A4; /* Roxo da logo */
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #F28C38; /* Laranja ao passar o mouse */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #A100A4; /* Roxo para o cabeçalho */
+    color: #fff;
+}
+
+input[type="number"] {
+    width: 60px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .logo {
+        max-width: 150px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    form, #selecionar-atividade {
+        max-width: 100%;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #adicionar-atividade, #selecionar-atividade {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 0.8em;
+    }
+
+    input[type="number"] {
+        width: 40px;
+    }
+}
