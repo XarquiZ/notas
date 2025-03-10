@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 "Pedro Henrique Santana",
                 "Thailane Lima",
                 "Rafael Almeida",
+                "Samuel Souza Simplicio",
                 "Sara Silva",
                 "Yasmin Pereira",
             ],
